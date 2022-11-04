@@ -23,8 +23,8 @@ body {
     background-color: #a8e0e0;
 }
 .centered-title {
-text-align: center;
-color: white;
+    text-align: center;
+    color: black;
 }
 .panel {
     padding: 0 18px;
@@ -35,14 +35,14 @@ color: white;
 }
 .accordion:after {
     content: '\02795';
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796";
+    content: "\2796";
 }
 .zoom {
     transition: transform .2s; /* Animation */
@@ -130,8 +130,8 @@ img {vertical-align: middle;}
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 22%;
-    left: 90%;
+    top: 30%;
+    left: 76%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -210,7 +210,6 @@ img {vertical-align: middle;}
 }
 
 .parent {
-    border: 1px solid black;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
@@ -233,5 +232,13 @@ img {vertical-align: middle;}
     width: 1000px;
     float:left;
     height:auto;
-    padding-left: 600px;
+    margin-bottom: -1000px;
+    margin-top: 60px;
+}
+
+.side-element3 {
+    width: 1000px;
+    float:left;
+    height:auto;
+    margin-bottom: -1000px;
 }
