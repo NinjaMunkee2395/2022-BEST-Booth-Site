@@ -163,6 +163,10 @@ img {vertical-align: middle;}
     border-radius: 3px 0 0 3px;
 }
 
+.prev {
+    left: 3.5275%;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
@@ -174,7 +178,13 @@ img {vertical-align: middle;}
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
+    left: 5%;
+    top: 0%;
+}
+
+.numbertextra {
     top: 0;
+    left: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -183,10 +193,10 @@ img {vertical-align: middle;}
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: darkslategrey;
-    border-radius: 50%;
+    background-color: transparent;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-left: 100000px;
 }
 
 .active, .dot:hover {
@@ -241,4 +251,9 @@ img {vertical-align: middle;}
     float:left;
     height:auto;
     margin-bottom: -1000px;
+}
+
+.textra {
+    top: 16%;
+    left: 86%;
 }
