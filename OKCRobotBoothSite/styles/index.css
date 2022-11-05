@@ -1,5 +1,6 @@
 body {
-    background-color: darkcyan;
+    background-color: darkcyan !important;
+
 }
 
 .video {
@@ -19,69 +20,14 @@ body {
     font-weight: 500;
 }
 
-.active, .accordion:hover {
-    background-color: #a8e0e0;
-}
 .centered-title {
     text-align: center;
     color: black;
-}
-.panel {
-    padding: 0 18px;
-    background-color: #cceded;
-    max-height: 0;
-    overflow: auto;
-    transition: max-height 0.2s ease-out;
-}
-.accordion:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-}
-.zoom {
-    transition: transform .2s; /* Animation */
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-}
-
-.container {
-    position: relative;
-    width: 100%;
 }
 
 .image {
     display: block;
     padding-bottom: 100px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 400px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: transparent;
-}
-
-.container:hover .overlay {
-    opacity: 1;
 }
 
 .text {
@@ -99,115 +45,7 @@ body {
     width: 500px;
 }
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides1 {
-    display: none;
-}
-.mySlides2 {
-    display: none;
-}
-.mySlides3 {
-    display: none;
-}
-.mySlides4 {
-    display: none;
-}
 img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;;
-}
-
-.slide-padding {
-    padding-right: 50%;
-}
-
-.subtitle-text{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 30%;
-    left: 76%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: right;
-    padding-left: 100px;
-    padding-bottom: 150px;
-    width: 500px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 3.5275%;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: cadetblue;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    left: 5%;
-    top: 0%;
-}
-
-.numbertextra {
-    top: 0;
-    left: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: transparent;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin-left: 100000px;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
 @keyframes fade {
     from {opacity: .4}
@@ -219,41 +57,30 @@ img {vertical-align: middle;}
     .prev, .next,.text {font-size: 11px}
 }
 
-.parent {
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
+.slide-show-settings {
+    width: 100%;
 }
 
-.child {
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+}
+.post-container{
+    float:left;
+    width: 70%;
+}
+.other-container{
+    width: 29%;
+    float: right;
+    background: pink;
+}
+.post {
     display: inline-block;
-    padding: 1rem 1rem;
-    vertical-align: middle;
+    width: 100%;
 }
 
-.side-element {
-    width: 1000px;
-    float:left;
-    height:auto;
-    padding-left: 100px;
-}
-
-.side-element2 {
-    width: 1000px;
-    float:left;
-    height:auto;
-    margin-bottom: -1000px;
-    margin-top: 60px;
-}
-
-.side-element3 {
-    width: 1000px;
-    float:left;
-    height:auto;
-    margin-bottom: -1000px;
-}
-
-.textra {
-    top: 16%;
-    left: 86%;
+/* (B) NOT IMPORTANT - COSMETICS */
+.wrap-flex > * {
+    width: 33%;
 }
