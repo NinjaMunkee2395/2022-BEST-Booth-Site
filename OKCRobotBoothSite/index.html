@@ -7,6 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
+
+    <style>
+        body {
+            background-color: darkcyan !important;
+
+        }
+
+        .video {
+            padding-left: 100px;
+        }
+        .accordion {
+            background-color: #69c2c2;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: 3px outset black;
+            outline: none;
+            transition: 0.4s;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        .centered-title {
+            text-align: center;
+            color: black !important;
+        }
+
+        .image {
+            display: block;
+            padding-bottom: 100px;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: right;
+            padding-left: 100px;
+            padding-bottom: 150px;
+            width: 500px;
+        }
+
+        img {vertical-align: middle;}
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+
+        .slide-show-settings {
+            width: 100%;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        .post-container{
+            float:left;
+            width: 70%;
+        }
+        .other-container{
+            width: 29%;
+            float: right;
+            background: pink;
+        }
+        .post {
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* (B) NOT IMPORTANT - COSMETICS */
+        .wrap-flex > * {
+            width: 33%;
+        }
+
+        .link-banner {
+            width: 500px;
+            background: yellow;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,8 +108,12 @@
 <h1 class="centered-title" style = "font-size: 50pt; margin-top: -25px; background: yellow; border: 1000px aquamarine">OKC Homeschool Robotics Booth</h1>
 <br/><br/>
 
-<div style = "margin-top: 4%">
-        <div class = "slide-show-settings postRef wrap-flex" style="margin-left: 56%; padding-top: -6%;position: absolute;" >
+<div class="link-banner" style="margin-left: 40%; width: 17.8%; margin-top: 2.25%">
+    <a href="https://youtu.be/HRL4b_ei_FQ">Please visit this video of our booth presentation.</a>
+</div>
+
+<div style = "margin-top: 10%">
+        <div class = "slide-show-settings postRef wrap-flex" style="margin-left: 56%; padding-top: -9%;position: absolute;" >
             <div class="bd-example">
                 <div id="carouselExampleCaptions1" class="carousel slide">
                     <ol class="carousel-indicators">
@@ -35,70 +133,70 @@
                             <img src="https://iili.io/meT7Lv.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p> This is our engineering design process.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTRIa.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h5></h5>
+                                <p>This process allows us to formalize a method in order to have repeatable success.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meT5hJ.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h5></h5>
+                                <p>Our first step is we define the problem. We do this by attending kick-off and reading the rules.</p>
+
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTumg.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Next, we begin brainstorming and strategizing. We decide what we need for each task and brainstorm parts for each. Such as a traversal, arm, manipulator, and an arm for Squeaky, to name a few.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTlrN.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Once we have our potential pieces, we begin making CAD and prototypes for each. Just because something is prototyped or CADed does not mean we’ll use it. We do this to see what could work, and what won’t work.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTGkX.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Our fourth step is to choose our design. We do this by using our specialized design matrix. To set up our design matrix, we decide what qualities we want each component to have and how important these qualities are.  We then rate each design on a scale of 1 to 10, in each of the categories, and multiply that number by a weight assigned to each quality based on importance.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meT12I.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p></p>
+                                <p>We then begin construction. As shown here, our company takes precautions to ensure our employee’s safety. Brandon is wearing ear protection and safety glasses while monitoring the CNC. Ben is taking a safety test on the hand drill while Brandon is watching him.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTE7t.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Next, we test & modify.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTwB4.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>As you can see, our process is in a circle. This is because we go through steps 1 through 6 multiple times throughout construction.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meTNEl.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Finally, we have our final robot.</p>
                             </div>
                         </div>
                     </div>
@@ -114,7 +212,10 @@
             </div>
         </div>
     </div>
-    <h1 class="centered-title" style = "font-size: 20pt; margin-top: -70px; background: yellow; border: 1000px aquamarine">Our Process-------------------------------------------------------------------Our Program</h1>
+
+
+
+    <h1 class="centered-title" style = "font-size: 20pt; margin-top: -70px; background: yellow; border: 1000px aquamarine;">Our Program-----------------------------------------------------------------------------------------Our Process</h1>
 
         <div class = "slide-show-settings postRef wrap-flex" style="margin-left: 10%; margin-top: 1%;position: absolute">
             <div class="bd-example">
@@ -136,70 +237,70 @@
                             <img src="https://iili.io/meApqv.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p><This is our Program./p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meRJdN.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>This is our Program.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meR9gp.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>These are the testimonials from past employees, such as Nathan Schubert, and Mason Gill.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meAy1R.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>This is our website, you can find us at www.okcrobot.com</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meRKIn.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Shown here are our programmers, working hard on the software that runs our robot.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meR3mX.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>We completed several outreach projects this year. We held a workshop, two bootcamps, and attended several demonstrations, including a presentation at ACE Academy. The workshop was called SOS, or “Sciencing On Saturday”. Students accomplished activities such as an engineering egg drop, and dissecting a frog, identifying the different organs. They also built and programmed Lego Robots. Our two boot camps were designed for prospective members. For our first, we went through our marketing & mechanical processes. During the second, we went over electrical as well as programming. We hosted such boot camps in order to prepare prospective & current students for the upcoming season.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meR2et.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p></p>
+                                <h5></h5>
+                                <p>These are our demographics. We have years with the company, plans to pursue a STEM career, race, grade, gender, and age ratio.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meRd7I.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>These are our organizations. We have our general organization as well as our notebook organization. Everyone on our team assists with the notebook presentation to ensure duplication of knowledge.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meRfXs.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p> All of our employees assisted with booth construction. Whether that was with the documents, removing staples and wallpaper from prior year booths, or building other pieces to display.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meRqLG.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>These are our sponsors. As well as the national BEST sponsors, OK Hub sponsors, as well as their logos.</p>
                             </div>
                         </div>
                     </div>
@@ -260,7 +361,7 @@
             </div>
         </div>
     </div>
-    <h1 class="centered-title" style = "font-size: 20pt; margin-top: -70px; background: yellow; border: 1000px aquamarine">Our Philosophy-----------------------------------------------------------------------Our Exhibit</h1>
+    <h1 class="centered-title" style = "font-size: 20pt; margin-top: -70px; background: yellow; border: 1000px aquamarine">Our Philosophy-----------------------------------------------------------------------------------------Our Exhibit</h1>
 
         <div class = "slide-show-settings postRef wrap-flex" style="margin-left: 10%; margin-top: 1%;position: absolute">
             <div class="bd-example">
@@ -275,21 +376,21 @@
                             <img src="https://iili.io/meI7lS.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>This is our products’ promise and our company mission statement.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meIAil.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Our company’s mission statement is “Bringing ingenuity and creativity through reliable and efficient products to encourage STEM in our community.” We strive to grow productive citizens in STEM fields while providing a safe, fun environment in which to hone students’ skills, in multiple disciplines.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://iili.io/meI5f2.md.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5></h5>
-                                <p></p>
+                                <p>Our promise is; “Ninja Munkees; delivering safe, innovative machine operation and order fulfillment, meeting each specific client’s needs.”</p>
                             </div>
                         </div>
                     </div>
